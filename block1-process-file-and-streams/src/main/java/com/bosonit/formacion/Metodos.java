@@ -11,6 +11,20 @@ import java.util.stream.Stream;
 
 public class Metodos {
 
+    private static String validacion (String line){
+
+        long numDelimitadores = line.chars().filter(c -> c==':').count();
+
+        while (numDelimitadores<2) {
+            numDelimitadores +=1;
+
+            line += ":0";
+
+        }
+
+        return line;
+    }
+
 
     public static List<Person> creaListPersonas() throws IOException, InvalidLineFormatException {
         String filename = "block1-process-file-and-streams/src/main/resources/people.csv";//Creo ruta del archivo
@@ -23,23 +37,31 @@ public class Metodos {
 
         while (line != null) {//Bucle while se repite hasta que línea esté vacía
 
-            //------------------------------------------------------------------------
-            //.chars() convierte un String en Stream-
-            //                         filter método de Stream con Lambda
-            //                                            predicado c donde c== contenga ':'comillas simples
-            long numDelimitadores = line.chars().filter(c -> c==':').count();
-            if (numDelimitadores == 0)
-                throw new InvalidLineFormatException("Faltan dos delimitadores (:)");
-            if (numDelimitadores == 1)
-                throw new InvalidLineFormatException("Falta un delimitador (:)");
+            line=validacion(line);
 
-            //------------------------------------------------------------------------
+
+
+//            //------------------------------------------------------------------------
+//            //.chars() convierte un String en Stream-
+//            //                         filter método de Stream con Lambda
+//            //                                            predicado c donde c== contenga ':'comillas simples
+//            long numDelimitadores = line.chars().filter(c -> c==':').count();
+//            if (numDelimitadores == 0)
+//                throw new InvalidLineFormatException("Faltan dos delimitadores (:)");
+//            if (numDelimitadores == 1)
+//                throw new InvalidLineFormatException("Falta un delimitador (:)");
+//
+//            //------------------------------------------------------------------------
+
+
 
             String[] datosPersona = line.split(":");//Creo array de String con las subcadenas obtenidas método String.Split(regex)
             //Al utilizar el .split() ya se referencia la longitud del array
             if (datosPersona[0].isBlank())//isBlank Returns true if the string is empty or contains only white space codepoints, otherwise false.
                 throw new InvalidLineFormatException("El nombre es obligatorio");
 
+
+            System.out.println(line);
             //------------------------------------------------------------------------
 
             Person person = new Person();//Crea objeto persona con constructro vacío
@@ -70,22 +92,22 @@ public class Metodos {
         for(Person p: listPersona){
             System.out.println(
                     "Name: " + p.getName() +
-                            "   Town: " + (p.getTown().equals("") ? "unknown" : p.getTown()) +
-                            "   Age: " + ((p.getAge().isEmpty()) ?"unknow":p.getAge().get()));//isEmpty -- isPresent
+                            "   Town: " + (p.getTown().equals("") || (p.getTown().equals("0")) ? "unknown" : p.getTown()) +
+                            "   Age: " + ((p.getAge().isEmpty() || (p.getAge().get().equals(0)) ?"unknow":p.getAge().get())));//isEmpty -- isPresent
         }
     }
 
-   public static List<Person> imprimeListPersonasFiltradaPorEdad(List<Person> listPersonas){
+    public static List<Person> imprimeListPersonasFiltradaPorEdad(List<Person> listPersonas){
 
         //Creo un stream de la lista
         Stream<Person> sListPersonas = listPersonas.stream();
-       //Creo una nueva lista de menos de 25 utilizando los metodos del stream sListPersona
-       //                                      filtra Lambda predico    condicion 1     y condición 2 .tolist  lo añade a la nueva lista
-       List<Person> menosDe25 = sListPersonas.filter(sLP ->sLP.getAge().isPresent() && sLP.getAge().get()<25 ).toList();
-       System.out.println();
-       System.out.println("-----------------------------------");
-       System.out.println("Apartado A: Personas menores de 25 ");
-       System.out.println("-----------------------------------");
+        //Creo una nueva lista de menos de 25 utilizando los metodos del stream sListPersona
+        //                                      filtra Lambda predico    condicion 1     y condición 2 .tolist  lo añade a la nueva lista
+        List<Person> menosDe25 = sListPersonas.filter(sLP ->sLP.getAge().isPresent() && sLP.getAge().get()<25 ).toList();
+        System.out.println();
+        System.out.println("-----------------------------------");
+        System.out.println("Apartado A: Personas menores de 25 ");
+        System.out.println("-----------------------------------");
 
         for(Person p:menosDe25){
             System.out.println(
@@ -97,7 +119,7 @@ public class Metodos {
     }
 
     public static void imprimeListaPersonasFiltraPrimeraLetra (List<Person> listPersonas){
-        //OTra forma de isntanciar list más directa .stream.....
+        //Otra forma de instanciar list más directa .stream.....
         //                                                                ! not
         List<Person> primeraLetra=listPersonas.stream().filter(lPS -> !lPS.getName().startsWith("A")).toList();
 
@@ -112,10 +134,10 @@ public class Metodos {
                             "   Town: " + (p.getTown().equals("") ? "unknown" : p.getTown()) +
                             "   Age: " + ((p.getAge().isEmpty()) ?"unknow":p.getAge().get()));//isEmpty -- isPresent
 
+        }
+
+
     }
-
-
-}
 
     public static void imprimeListPersonasFiltradaPorEdadYMadrid(List<Person> listPersonas){
         //Optional<T> findFirst()
@@ -140,7 +162,7 @@ public class Metodos {
 
             }
         }
-}
+    }
     public static void imprimeListPersonasFiltradaPorEdadYBarcelona(List<Person> listPersonas){
         //Optional<T> findFirst()
         //Returns an Optional describing the first element of this stream, or an empty Optional if the stream is empty. If the stream has no encounter order, then any element may be returned.

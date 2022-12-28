@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.List;
 
 public class Ejercicio {
-    public static void creaListaPersonas() throws InvalidLineFormatException, IOException {
-        List<Person> listPersonas =Metodos.creaListPersonas();
-    }
+//    public static void creaListaPersonas() throws InvalidLineFormatException, IOException {
+//        List<Person> listPersonas =Metodos.creaListPersonas();
+//    }
 
     public static void primeraParteEjercicio() throws InvalidLineFormatException, IOException {
         Metodos.imprimeListPersonas(Metodos.creaListPersonas());
