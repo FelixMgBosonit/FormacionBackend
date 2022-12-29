@@ -1,0 +1,2 @@
+2022-12-29 14:40:17,508 ERROR [http-nio-8080-exec-1] c.b.f.b.MainController [MainController.java:19] Mensaje a nivel de ERROR
+2022-12-29 14:40:31,149 ERROR [http-nio-8080-exec-3] c.b.f.b.MainController [MainController.java:19] Mensaje a nivel de ERROR

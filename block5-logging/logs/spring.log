@@ -1,0 +1,150 @@
+2022-12-29T13:13:06.224+01:00  INFO 3900 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 3900 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T13:13:06.228+01:00  INFO 3900 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T13:13:07.194+01:00  INFO 3900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T13:13:07.203+01:00  INFO 3900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T13:13:07.214+01:00  INFO 3900 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T13:13:07.289+01:00  INFO 3900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T13:13:07.289+01:00  INFO 3900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
+2022-12-29T13:13:07.639+01:00  INFO 3900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T13:13:07.652+01:00  INFO 3900 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.913 seconds (process running for 2.213)
+2022-12-29T13:13:37.651+01:00  INFO 3900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T13:13:37.652+01:00  INFO 3900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T13:13:37.653+01:00  INFO 3900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T13:13:37.683+01:00  INFO 3900 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T13:13:37.683+01:00  WARN 3900 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T13:13:37.683+01:00 ERROR 3900 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
+2022-12-29T13:17:46.022+01:00  INFO 13236 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 13236 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T13:17:46.025+01:00  INFO 13236 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T13:17:46.998+01:00  INFO 13236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T13:17:47.007+01:00  INFO 13236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T13:17:47.008+01:00  INFO 13236 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T13:17:47.108+01:00  INFO 13236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T13:17:47.109+01:00  INFO 13236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1032 ms
+2022-12-29T13:17:47.450+01:00  INFO 13236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T13:17:47.459+01:00  INFO 13236 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.901 seconds (process running for 2.207)
+2022-12-29T13:17:50.453+01:00  INFO 13236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T13:17:50.454+01:00  INFO 13236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T13:17:50.456+01:00  INFO 13236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T13:17:50.485+01:00  INFO 13236 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T13:17:50.486+01:00  WARN 13236 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T13:17:50.486+01:00 ERROR 13236 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
+ERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERRORERROR2022-12-29T13:46:28.846+01:00  INFO 11792 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 11792 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T13:46:28.849+01:00  INFO 11792 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T13:46:29.809+01:00  INFO 11792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T13:46:29.818+01:00  INFO 11792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T13:46:29.818+01:00  INFO 11792 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T13:46:29.914+01:00  INFO 11792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T13:46:29.914+01:00  INFO 11792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1012 ms
+2022-12-29T13:46:30.280+01:00  INFO 11792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T13:46:30.290+01:00  INFO 11792 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.915 seconds (process running for 2.237)
+2022-12-29T13:46:41.204+01:00  INFO 11792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T13:46:41.205+01:00  INFO 11792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T13:46:41.206+01:00  INFO 11792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T13:46:41.237+01:00  INFO 11792 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T13:46:41.238+01:00  WARN 11792 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T13:46:41.238+01:00 ERROR 11792 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
+2022-12-29T13:47:04.794+01:00  INFO 5084 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 5084 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T13:47:04.798+01:00  INFO 5084 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T13:47:05.655+01:00  INFO 5084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T13:47:05.663+01:00  INFO 5084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T13:47:05.664+01:00  INFO 5084 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T13:47:05.750+01:00  INFO 5084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T13:47:05.751+01:00  INFO 5084 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 902 ms
+2022-12-29T13:47:06.084+01:00  INFO 5084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T13:47:06.092+01:00  INFO 5084 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.706 seconds (process running for 1.998)
+2022-12-29T14:06:29.280+01:00  INFO 5540 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 5540 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:06:29.283+01:00  INFO 5540 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:06:30.209+01:00  INFO 5540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:06:30.220+01:00  INFO 5540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:06:30.221+01:00  INFO 5540 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:06:30.300+01:00  INFO 5540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:06:30.301+01:00  INFO 5540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2022-12-29T14:06:30.629+01:00  INFO 5540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:06:30.638+01:00  INFO 5540 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.776 seconds (process running for 2.082)
+2022-12-29T14:06:36.931+01:00  INFO 5540 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T14:06:36.932+01:00  INFO 5540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T14:06:36.933+01:00  INFO 5540 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T14:06:36.965+01:00  INFO 5540 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T14:06:36.966+01:00  WARN 5540 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T14:06:36.966+01:00 ERROR 5540 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
+2022-12-29T14:08:27.842+01:00  INFO 3752 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 3752 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:08:27.845+01:00  INFO 3752 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:08:28.714+01:00  INFO 3752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:08:28.724+01:00  INFO 3752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:08:28.725+01:00  INFO 3752 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:08:28.802+01:00  INFO 3752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:08:28.803+01:00  INFO 3752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 917 ms
+2022-12-29T14:08:29.128+01:00  INFO 3752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:08:29.138+01:00  INFO 3752 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.712 seconds (process running for 2.032)
+2022-12-29T14:08:51.700+01:00  INFO 17044 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 17044 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:08:51.703+01:00  INFO 17044 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:08:52.587+01:00  INFO 17044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:08:52.597+01:00  INFO 17044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:08:52.598+01:00  INFO 17044 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:08:52.681+01:00  INFO 17044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:08:52.682+01:00  INFO 17044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2022-12-29T14:08:53.004+01:00  INFO 17044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:08:53.012+01:00  INFO 17044 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.756 seconds (process running for 2.027)
+2022-12-29T14:09:07.765+01:00  INFO 17044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T14:09:07.765+01:00  INFO 17044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T14:09:07.766+01:00  INFO 17044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T14:09:07.798+01:00  INFO 17044 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T14:09:07.798+01:00  WARN 17044 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T14:09:07.798+01:00 ERROR 17044 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
+2022-12-29T14:09:31.450+01:00  INFO 17492 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 17492 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:09:31.453+01:00  INFO 17492 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:09:32.313+01:00  INFO 17492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:09:32.324+01:00  INFO 17492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:09:32.324+01:00  INFO 17492 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:09:32.409+01:00  INFO 17492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:09:32.410+01:00  INFO 17492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
+2022-12-29T14:09:32.725+01:00  INFO 17492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:09:32.734+01:00  INFO 17492 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.712 seconds (process running for 1.996)
+2022-12-29T14:09:41.880+01:00  INFO 12060 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 12060 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:09:41.883+01:00  INFO 12060 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:09:42.755+01:00  INFO 12060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:09:42.765+01:00  INFO 12060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:09:42.766+01:00  INFO 12060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:09:42.850+01:00  INFO 12060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:09:42.850+01:00  INFO 12060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 919 ms
+2022-12-29T14:09:43.206+01:00  INFO 12060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:09:43.215+01:00  INFO 12060 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.779 seconds (process running for 2.064)
+2022-12-29T14:10:13.982+01:00  INFO 12196 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 12196 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:10:13.986+01:00  INFO 12196 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:10:14.965+01:00  INFO 12196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:10:14.975+01:00  INFO 12196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:10:14.976+01:00  INFO 12196 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:10:15.060+01:00  INFO 12196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:10:15.061+01:00  INFO 12196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1023 ms
+2022-12-29T14:10:15.460+01:00  INFO 12196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:10:15.469+01:00  INFO 12196 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.897 seconds (process running for 2.195)
+2022-12-29T14:18:58.951+01:00  INFO 16800 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 16800 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:18:58.955+01:00  INFO 16800 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:18:59.820+01:00  INFO 16800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:18:59.830+01:00  INFO 16800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:18:59.830+01:00  INFO 16800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:18:59.907+01:00  INFO 16800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:18:59.908+01:00  INFO 16800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 898 ms
+2022-12-29T14:19:00.210+01:00  INFO 16800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:19:00.218+01:00  INFO 16800 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.695 seconds (process running for 1.989)
+2022-12-29T14:19:13.512+01:00  INFO 16800 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T14:19:13.513+01:00  INFO 16800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T14:19:13.514+01:00  INFO 16800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T14:19:13.547+01:00  INFO 16800 --- [http-nio-8080-exec-2] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T14:19:13.548+01:00  WARN 16800 --- [http-nio-8080-exec-2] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T14:19:13.548+01:00 ERROR 16800 --- [http-nio-8080-exec-2] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
+2022-12-29T14:20:51.630+01:00  INFO 16672 --- [main] c.b.f.b.Block5LoggingApplication         : Starting Block5LoggingApplication using Java 17.0.5 with PID 16672 (C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas\block5-logging\target\classes started by felix.munoz in C:\Users\felix.munoz\IdeaProjects\FormacionBackend_Pruebas)
+2022-12-29T14:20:51.641+01:00  INFO 16672 --- [main] c.b.f.b.Block5LoggingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-12-29T14:20:52.540+01:00  INFO 16672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-29T14:20:52.548+01:00  INFO 16672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29T14:20:52.549+01:00  INFO 16672 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2022-12-29T14:20:52.654+01:00  INFO 16672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29T14:20:52.655+01:00  INFO 16672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 960 ms
+2022-12-29T14:20:52.951+01:00  INFO 16672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29T14:20:52.959+01:00  INFO 16672 --- [main] c.b.f.b.Block5LoggingApplication         : Started Block5LoggingApplication in 1.754 seconds (process running for 2.018)
+2022-12-29T14:21:01.316+01:00  INFO 16672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29T14:21:01.317+01:00  INFO 16672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-29T14:21:01.318+01:00  INFO 16672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-29T14:21:01.346+01:00  INFO 16672 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de INFO
+2022-12-29T14:21:01.347+01:00  WARN 16672 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de WARNING
+2022-12-29T14:21:01.347+01:00 ERROR 16672 --- [http-nio-8080-exec-1] c.b.f.block5logging.MainController       : Mensaje a nivel de ERROR
