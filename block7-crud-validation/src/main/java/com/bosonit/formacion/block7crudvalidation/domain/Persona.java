@@ -51,22 +51,4 @@ public class Persona {
     private Date termination_date;
 
 
-    //Con este metodo se crea una pesrsona pasando por parámetro un PersonaInputDTO
-    public Persona (PersonaInputDto personaInputDto){
-       // this.id_persona=personaInputDto.getId_persona();
-        this.usuario=personaInputDto.getUsuario();
-        this.password=personaInputDto.getPassword();
-        this.name=personaInputDto.getName();
-        this.surname=personaInputDto.getSurname();
-        this.company_email=personaInputDto.getCompany_email();
-        this.personal_email=personaInputDto.getPersonal_email();
-        this.city=personaInputDto.getCity();
-        this.active=personaInputDto.getActive();
-       // this.created_date=personaInputDto.getCreated_date();
-        this.imagen_url=personaInputDto.getImagen_url();
-        this.termination_date=personaInputDto.getTermination_date();
-    }
-
-
-
 }
