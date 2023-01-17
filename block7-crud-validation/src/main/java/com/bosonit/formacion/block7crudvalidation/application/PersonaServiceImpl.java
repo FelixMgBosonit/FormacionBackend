@@ -18,115 +18,39 @@ public class PersonaServiceImpl implements PersonaService {
 
 
     @Override
-    public PersonaOutputDto addPersona(PersonaInputDto pInputDto) {
-        //-------------------------------------------Parte 1----------------------------------
-        //Para añadir una persona hay que pasarle a personaRepository una persona con todos sus campos.
-        //Al recogerse un inputDto desde el postman primero hay que crear una persona con esos datos.ç
-        //Se construye con constructor vacío, para que el id y la createDate se introduzcan automaticamente.
-        Persona p = new Persona();
-        //Y ahora se setean todos los demás campos contenidos en el inputDto
+    public PersonaOutputDto addPersona(PersonaInputDto personaInputDto) {
+        //Instancio objeto persona con el inPut por parámetro
+        Persona p = new Persona(personaInputDto);
 
 
-        p.setUsuario(pInputDto.getUsuario());
-        p.setPassword(pInputDto.getPassword());
-        p.setName(pInputDto.getName());
-        p.setSurname(pInputDto.getSurname());
-        p.setCompany_email(pInputDto.getCompany_email());
-        p.setPersonal_email(pInputDto.getPersonal_email());
-        p.setCity(pInputDto.getCity());
-        p.setActive(pInputDto.getActive());
-        p.setImagen_url(pInputDto.getImagen_url());
-        p.setTermination_date(pInputDto.getTermination_date());
-        //----------------------------------------------------------------------------------
-
-
-        //-------------------------------------------Parte 2--------------------------------
-        //Ahora que tenemos la persona (p) construida se hace un save en el Repositorio.;
-
+        //Guardo la persona p en el repositorio
         personaRepository.save(p);
 
-        //----------------------------------------------------------------------------------
+        //Creo un outPutDto de esa persona para devolverlo
+        //PersonaOutputDto personaOutputDto =new PersonaOutputDto(p);
 
-        //-------------------------------------------Parte 3--------------------------------
-        //Ahora se crea un outPutDto de esa persona para devolverlo
-
-        PersonaOutputDto pOutputDto = new PersonaOutputDto();
-        pOutputDto.setId_persona(p.getId_persona());
-        pOutputDto.setUsuario(p.getUsuario());
-        pOutputDto.setName(p.getName());
-        pOutputDto.setSurname(p.getSurname());
-        pOutputDto.setCompany_email(p.getCompany_email());
-        pOutputDto.setPersonal_email(p.getPersonal_email());
-        pOutputDto.setCity(p.getCity());
-        pOutputDto.setActive(p.getActive());
-        pOutputDto.setCreated_date(p.getCreated_date());
-        pOutputDto.setImagen_url(p.getImagen_url());
-        pOutputDto.setTermination_date(p.getTermination_date());
-        //----------------------------------------------------------------------------------
-
-        return pOutputDto;
+        return new PersonaOutputDto(p);
     }
 
     @Override
     public PersonaOutputDto getPersonaById(Integer id) {
-        Persona p= personaRepository.findById(id).orElseThrow();
-
-        PersonaOutputDto pOutputDto = new PersonaOutputDto();
-        pOutputDto.setId_persona(p.getId_persona());
-        pOutputDto.setUsuario(p.getUsuario());
-        pOutputDto.setName(p.getName());
-        pOutputDto.setSurname(p.getSurname());
-        pOutputDto.setCompany_email(p.getCompany_email());
-        pOutputDto.setPersonal_email(p.getPersonal_email());
-        pOutputDto.setCity(p.getCity());
-        pOutputDto.setActive(p.getActive());
-        pOutputDto.setCreated_date(p.getCreated_date());
-        pOutputDto.setImagen_url(p.getImagen_url());
-        pOutputDto.setTermination_date(p.getTermination_date());
-
-        return pOutputDto;
+        return new PersonaOutputDto(personaRepository.findById(id).orElseThrow());
     }
 
     @Override
     public PersonaOutputDto getPersonaByUserName(String usuario) {
-        Persona p = personaRepository.findByUsuario(usuario);
-        PersonaOutputDto pOutputDto = new PersonaOutputDto();
-        pOutputDto.setId_persona(p.getId_persona());
-        pOutputDto.setUsuario(p.getUsuario());
-        pOutputDto.setName(p.getName());
-        pOutputDto.setSurname(p.getSurname());
-        pOutputDto.setCompany_email(p.getCompany_email());
-        pOutputDto.setPersonal_email(p.getPersonal_email());
-        pOutputDto.setCity(p.getCity());
-        pOutputDto.setActive(p.getActive());
-        pOutputDto.setCreated_date(p.getCreated_date());
-        pOutputDto.setImagen_url(p.getImagen_url());
-        pOutputDto.setTermination_date(p.getTermination_date());
-
-        return pOutputDto;
+        return new PersonaOutputDto(personaRepository.findByUsuario(usuario));
     }
 
 
     @Override
     public List<PersonaOutputDto> getAllPersonas() {
-        List<PersonaOutputDto> pOutputDtoList = new ArrayList<>();
-        for (Persona p : personaRepository.findAll()) {
-            PersonaOutputDto pOutputDto = new PersonaOutputDto();
+        List<PersonaOutputDto> personaOutputDtoList = new ArrayList<>();
 
-            pOutputDto.setId_persona(p.getId_persona());
-            pOutputDto.setUsuario(p.getUsuario());
-            pOutputDto.setName(p.getName());
-            pOutputDto.setSurname(p.getSurname());
-            pOutputDto.setCompany_email(p.getCompany_email());
-            pOutputDto.setPersonal_email(p.getPersonal_email());
-            pOutputDto.setCity(p.getCity());
-            pOutputDto.setActive(p.getActive());
-            pOutputDto.setCreated_date(p.getCreated_date());
-            pOutputDto.setImagen_url(p.getImagen_url());
-            pOutputDto.setTermination_date(p.getTermination_date());
-            pOutputDtoList.add(pOutputDto);
+        for (Persona p : personaRepository.findAll()) {
+            personaOutputDtoList.add(new PersonaOutputDto(p));
         }
-        return pOutputDtoList;
+        return personaOutputDtoList;
 
     }
 }

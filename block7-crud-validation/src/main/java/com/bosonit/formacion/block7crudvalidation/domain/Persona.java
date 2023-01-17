@@ -50,5 +50,20 @@ public class Persona {
 
     private Date termination_date;
 
+    //Creo constructor en el que le pasaría por parámetro un inputDto.
+    //El id y la createDate se generará automáticamente.
+    public Persona (PersonaInputDto personaInputDto){
+        this.usuario=personaInputDto.getUsuario();
+        this.password=personaInputDto.getPassword();
+        this.name=personaInputDto.getName();
+        this.surname=personaInputDto.getSurname();
+        this.company_email=personaInputDto.getCompany_email();
+        this.personal_email=personaInputDto.getPersonal_email();
+        this.city=personaInputDto.getCity();
+        this.active=personaInputDto.getActive();
+        this.imagen_url=personaInputDto.getImagen_url();
+        this.termination_date=personaInputDto.getTermination_date();
+    }
+
 
 }

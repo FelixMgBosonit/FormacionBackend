@@ -25,5 +25,18 @@ public class PersonaOutputDto {
     private Date termination_date;
 
 
-
+    //Creo constructor en el que le pasaría por parámetro una persona.
+    public PersonaOutputDto(Persona persona) {
+        this.id_persona = persona.getId_persona();
+        this.usuario = persona.getUsuario();
+        this.name = persona.getName();
+        this.surname = persona.getSurname();
+        this.company_email = persona.getCompany_email();
+        this.personal_email = persona.getPersonal_email();
+        this.city = persona.getCity();
+        this.active = persona.getActive();
+        this.created_date = persona.getCreated_date();
+        this.imagen_url = persona.getImagen_url();
+        this.termination_date = persona.getTermination_date();
+    }
 }
