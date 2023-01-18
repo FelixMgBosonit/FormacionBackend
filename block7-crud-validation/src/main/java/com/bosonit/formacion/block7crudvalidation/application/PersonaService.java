@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface PersonaService {
 
-    PersonaOutputDto addPersona(PersonaInputDto persona);
+    PersonaOutputDto addPersona(PersonaInputDto persona) throws Exception;
     PersonaOutputDto getPersonaById(Integer id);
     PersonaOutputDto getPersonaByUserName(String user);
     List<PersonaOutputDto> getAllPersonas();

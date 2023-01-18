@@ -20,7 +20,7 @@ public class Controller {
 
 
     @PostMapping("/")
-    public ResponseEntity<PersonaOutputDto> addPersona(@RequestBody PersonaInputDto persona) {
+    public ResponseEntity<PersonaOutputDto> addPersona(@RequestBody PersonaInputDto persona) throws Exception {
 
             return new ResponseEntity<>(personaService.addPersona(persona), HttpStatus.CREATED);
         }

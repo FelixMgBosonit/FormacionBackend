@@ -18,12 +18,42 @@ public class PersonaServiceImpl implements PersonaService {
 
 
     @Override
-    public PersonaOutputDto addPersona(PersonaInputDto personaInputDto) {
+    public PersonaOutputDto addPersona(PersonaInputDto personaInputDto) throws Exception {
         //Instancio objeto persona con el inPut por parámetro
         Persona p = new Persona(personaInputDto);
 
-
+        //Realizar validaciones necesarias con lógica en java (no usar etiqueta @Valid)
+        if (p.getUsuario() == null) {
+            throw new Exception("Usuario no puede ser nulo");
+        }
+        if (p.getUsuario() == null || p.getUsuario().length() < 3 || p.getUsuario().length() > 10) {
+            //En el ejercicio ponía mínimo 6, cambio a 3: Jose,Eva..
+            throw new Exception("Usuario debe tener entre 6 y 10 caracteres y no puede ser nulo");
+        }
+        if (p.getPassword() == null) {
+            throw new Exception("Password no puede ser nulo");
+        }
+        if (p.getName() == null) {
+            throw new Exception("Name no puede ser nulo");
+        }
+        if (p.getCompany_email() == null) {
+            throw new Exception("Company_email no puede ser nulo");
+        }
+        if (p.getPersonal_email() == null) {
+            throw new Exception("Personal_email no puede ser nulo");
+        }
+        if (p.getCity() == null) {
+            throw new Exception("City no puede ser nulo");
+        }
+        if (p.getActive() == null) {
+            throw new Exception("Active no puede ser nulo");
+        }
+        //Este if no es necesario con @CreationTimestamp se introducirá automáticamente
+//        if (p.getCreated_date() == null) {
+//            throw new Exception("Created_date no puede ser nulo");
+//        }
         //Guardo la persona p en el repositorio
+
         personaRepository.save(p);
 
         //Creo un outPutDto de esa persona para devolverlo
