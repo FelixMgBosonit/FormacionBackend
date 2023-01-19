@@ -64,6 +64,4 @@ public class Persona {
         this.imagen_url=personaInputDto.getImagen_url();
         this.termination_date=personaInputDto.getTermination_date();
     }
-
-
 }

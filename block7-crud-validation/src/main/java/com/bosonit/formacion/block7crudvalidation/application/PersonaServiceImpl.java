@@ -22,7 +22,6 @@ public class PersonaServiceImpl implements PersonaService {
         //Instancio objeto persona con el inPut por parámetro
         Persona p = new Persona(personaInputDto);
 
-
 // Parte anterior del ejercicio, al realizar las excepciones propias estos ifs no son necesarios
 
 //        //Realizar validaciones necesarias con lógica en java (no usar etiqueta @Valid)
@@ -83,7 +82,7 @@ public class PersonaServiceImpl implements PersonaService {
         return personaOutputDtoList;
 
     }
-}
+
 
 //-------------------------------Opción Sergio 1---------------------------------------
 //    @Override
@@ -110,6 +109,42 @@ public class PersonaServiceImpl implements PersonaService {
 //        return personas.stream().map(PersonaOutputDto::new).toList();
 //-------------------------------------------------------------------------------------
 
+    @Override
+    public void deletePersonaById(Integer id) {
+        personaRepository.deleteById(id);
+
+    }
+
+    @Override
+    public PersonaOutputDto updatePersona(Integer id, PersonaInputDto personaInputDto) {
+        //Creo una persona que será igual a la que ya hay en el repositorio.
+        Persona personaUpdate= personaRepository.findById(id).orElseThrow();
+
+        //Seteo los diferentes campos de esa persona desde el input
+        //Los que no se setean siguen igual...con lo que id y fechaCreación seguirían igual
+        //Si pasamos un json con menos campos esos campos en el input van a nulo, y salaría la excepcion
+        //Con estos if si van a nulos no setean, dejando los valores anteriores que ya están controlados en el add.
+
+        if(personaInputDto.getUsuario()!=null) personaUpdate.setUsuario(personaInputDto.getUsuario());
+        if(personaInputDto.getPassword()!=null) personaUpdate.setPassword(personaInputDto.getPassword());
+        if(personaInputDto.getName()!=null) personaUpdate.setName(personaInputDto.getName());
+        if(personaInputDto.getSurname()!=null) personaUpdate.setSurname(personaInputDto.getSurname());
+        if(personaInputDto.getCompany_email()!=null)  personaUpdate.setCompany_email(personaInputDto.getCompany_email());
+        if(personaInputDto.getPersonal_email()!=null) personaUpdate.setPersonal_email(personaInputDto.getPersonal_email());
+        if(personaInputDto.getCity()!=null) personaUpdate.setCity(personaInputDto.getCity());
+        if(personaInputDto.getActive()!=null) personaUpdate.setActive(personaInputDto.getActive());
+        if(personaInputDto.getImagen_url()!=null) personaUpdate.setImagen_url(personaInputDto.getImagen_url());
+        if(personaInputDto.getTermination_date()!=null) personaUpdate.setTermination_date(personaInputDto.getTermination_date());
+
+        //Guardo los cambios
+        personaRepository.save(personaUpdate);
+
+
+        return  new PersonaOutputDto(personaUpdate);
+    }
+
+
+}
 
 
 

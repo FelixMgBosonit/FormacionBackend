@@ -11,5 +11,7 @@ public interface PersonaService {
     PersonaOutputDto getPersonaById(Integer id);
     PersonaOutputDto getPersonaByUserName(String user);
     List<PersonaOutputDto> getAllPersonas();
+    void deletePersonaById (Integer id);
+    PersonaOutputDto  updatePersona(Integer id, PersonaInputDto personaInputDto);
 
 }
