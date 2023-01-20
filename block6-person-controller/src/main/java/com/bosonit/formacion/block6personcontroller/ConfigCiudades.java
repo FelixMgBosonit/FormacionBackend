@@ -8,8 +8,11 @@ import java.util.List;
 
 @Configuration
 public class ConfigCiudades {
+
 @Bean
-public List<Ciudad> listaCiudades() {
+public List<Ciudad> CreaListaCiudades() {
+    //System.out.println("Lista Ciudades Creada");
     return new ArrayList<>();
+
 }
 }

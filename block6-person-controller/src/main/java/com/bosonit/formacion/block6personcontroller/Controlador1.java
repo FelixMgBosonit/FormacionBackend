@@ -13,9 +13,9 @@ import java.util.List;
 public class Controlador1 {
 
     @Autowired
-    private ServicioPersona servivioPersona;
+    ServicioPersona servicioPersona;
     @Autowired
-    private List<Ciudad> listaCiudades;
+    List<Ciudad> listaCiudades;
 
 
     @GetMapping("/addPersona")
@@ -23,7 +23,7 @@ public class Controlador1 {
                               @RequestHeader("poblacion") String poblacion,
                               @RequestHeader("edad") int edad) {
 
-        return servivioPersona.creaPersona(nombre,poblacion,edad);
+        return servicioPersona.creaPersona(nombre,poblacion,edad);
     }
 
     @PostMapping("/addCiudad")

@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "08cae3e6-b79c-4a2b-925f-efd3efc5f673",
+		"name": "block6-person-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "Apartado 1",
+			"item": [
+				{
+					"name": "GET C1 Persona 1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "nombre",
+								"value": "Félix",
+								"type": "text"
+							},
+							{
+								"key": "poblacion",
+								"value": "A Coruña",
+								"type": "text"
+							},
+							{
+								"key": "edad",
+								"value": "84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador1/addPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador1",
+								"addPersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET C1 Persona 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "nombre",
+								"value": "Pepe",
+								"type": "text"
+							},
+							{
+								"key": "poblacion",
+								"value": "A coruña",
+								"type": "text"
+							},
+							{
+								"key": "edad",
+								"value": "90",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador1/addPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador1",
+								"addPersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET C2 Persona 1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "nombre",
+								"value": "Félix",
+								"type": "text"
+							},
+							{
+								"key": "poblacion",
+								"value": "A Coruña",
+								"type": "text"
+							},
+							{
+								"key": "edad",
+								"value": "84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador2/getPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador2",
+								"getPersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET C2 Persona 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "nombre",
+								"value": "Pepe",
+								"type": "text"
+							},
+							{
+								"key": "poblacion",
+								"value": "A Coruña",
+								"type": "text"
+							},
+							{
+								"key": "edad",
+								"value": "40",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador2/getPersona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador2",
+								"getPersona"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Apartado 2",
+			"item": [
+				{
+					"name": "POST C1 Ciudad 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\":\"A Coruña\",\r\n        \"numHabitantes\": 180000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador1/addCiudad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador1",
+								"addCiudad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST C1 Ciudad 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\":\"Puertollano\",\r\n        \"numHabitantes\": 54000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador1/addCiudad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador1",
+								"addCiudad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET C2 GetCiudad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\":\"A Coruña\",\r\n        \"numHabitantes\": 180000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/controlador2/getCiudad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador2",
+								"getCiudad"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Apartado 3",
+			"item": [
+				{
+					"name": "GET bean1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/controlador/bean/bean1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador",
+								"bean",
+								"bean1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET bean2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/controlador/bean/bean2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador",
+								"bean",
+								"bean2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET bean3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/controlador/bean/bean3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controlador",
+								"bean",
+								"bean3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
