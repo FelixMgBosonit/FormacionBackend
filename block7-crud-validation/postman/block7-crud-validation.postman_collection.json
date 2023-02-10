@@ -7,483 +7,1563 @@
 	},
 	"item": [
 		{
-			"name": "POST",
+			"name": "PERSONA",
 			"item": [
 				{
-					"name": "POST Persona 1",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "nombre",
-								"value": "pepe",
-								"type": "text"
-							},
-							{
-								"key": "poblacion",
-								"value": "Madrid",
-								"type": "text"
-							},
-							{
-								"key": "edad",
-								"value": "32",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n        \"usuario\":\"Nala\",\r\n        \"password\": \"Pass\",\r\n        \"name\": \"Nala\",\r\n        \"surname\": \"Partor Aleman\",\r\n        \"company_email\": \"Nala@example.com\",\r\n        \"personal_email\": \"Nala@gmail.com\",\r\n        \"city\": \"A Coruña\",\r\n        \"active\": true,\r\n        \"imagen_url\": \"http9s://example.com/images/Nala.jpg\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "POST PERSONA",
+					"item": [
+						{
+							"name": "addPersona 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Ficticia1\",\r\n    \"password\": \"PassFicticia1\",\r\n    \"name\": \"Ficticia1\",\r\n    \"surname\": \"Ficticia1 Ficticia1\",\r\n    \"companyEmail\": \"Ficticia1@example.com\",\r\n    \"personalEmail\": \"Ficticia1@gmail.com\",\r\n    \"city\": \"Ciudad Ficticia1\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Ficticia1.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										""
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								""
-							]
+						{
+							"name": "addPersona 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Ficticia2\",\r\n    \"password\": \"PassFicticia2\",\r\n    \"name\": \"Ficticia2\",\r\n    \"surname\": \"Ficticia2 Ficticia2\",\r\n    \"companyEmail\": \"Ficticia2@example.com\",\r\n    \"personalEmail\": \"Ficticia2@gmail.com\",\r\n    \"city\": \"Ciudad Ficticia2\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Ficticia2.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Ficticia3\",\r\n    \"password\": \"PassFicticia3\",\r\n    \"name\": \"Ficticia3\",\r\n    \"surname\": \"Ficticia3 Ficticia3\",\r\n    \"companyEmail\": \"Ficticia3@example.com\",\r\n    \"personalEmail\": \"Ficticia3@gmail.com\",\r\n    \"city\": \"Ciudad Ficticia3\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"https//example.com/images/Ficticia3.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Ficticia4\",\r\n    \"password\": \"PassFicticia4\",\r\n    \"name\": \"Ficticia4\",\r\n    \"surname\": \"Ficticia4 Ficticia4\",\r\n    \"companyEmail\": \"Ficticia4@example.com\",\r\n    \"personalEmail\": \"Ficticia4@gmail.com\",\r\n    \"city\": \"Ciudad Ficticia4\",\r\n    \"active\": true,\r\n    \"imagenUrl\": \"http://example.com/images/Ficticia4.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										""
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "POST Persona 2",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "nombre",
-								"value": "pepe",
-								"type": "text"
-							},
-							{
-								"key": "poblacion",
-								"value": "Madrid",
-								"type": "text"
-							},
-							{
-								"key": "edad",
-								"value": "32",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n        \"usuario\":\"Gara\",\r\n        \"password\": \"PassGara\",\r\n        \"name\": \"Gara\",\r\n        \"surname\": \"Bulldog Francés\",\r\n        \"company_email\": \"Gara@example.com\",\r\n        \"personal_email\": \"Gara@gmail.com\",\r\n        \"city\": \"15002\",\r\n        \"active\": true,\r\n        \"imagen_url\": \"http9s://example.com/images/Nala.jpg\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "GET PERSONA",
+					"item": [
+						{
+							"name": "getPersonaById 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"1"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								""
-							]
+						{
+							"name": "getPersonaById 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 4",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/256465",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"256465"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaByName 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/name/Ficticia1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"name",
+										"Ficticia1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPsonaByUser 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/usuario/Messi",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"usuario",
+										"Messi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllPersonas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/personas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"personas"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "POST Persona 4Error 1",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "nombre",
-								"value": "pepe",
-								"type": "text"
-							},
-							{
-								"key": "poblacion",
-								"value": "Madrid",
-								"type": "text"
-							},
-							{
-								"key": "edad",
-								"value": "32",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n        \"usuario\":\"Persona con usuario demasiado largo\",\r\n        \"password\": \"PassPrueba\",\r\n        \"name\": \"Prueba\",\r\n        \"surname\": \"Prueba\",\r\n        \"company_email\": \"Prueba@example.com\",\r\n        \"personal_email\": \"Prueba@gmail.com\",\r\n        \"city\": \"15000\",\r\n        \"active\": true,\r\n        \"imagen_url\": \"http9s://example.com/images/Nala.jpg\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "PUT PERSONA",
+					"item": [
+						{
+							"name": "updatePersona 1 Completo",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"usuario\": \"Cambio\",\r\n    \"name\": \"Cambio\",\r\n    \"surname\": \"Cambio\",\r\n    \"companyEmail\": \"Cambio@example.com\",\r\n    \"personalEmail\": \"Cambio@gmail.com\",\r\n    \"city\": \"Cambio\",\r\n    \"active\": true,\r\n    \"createdDate\": \"2023-01-19T11:08:16.864+00:00\",\r\n    \"imagenUrl\": \"http9s://example.com/images/Cambio.jpg\",\r\n    \"terminationDate\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"update",
+										"1"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								""
-							]
+						{
+							"name": "updatePersona 1 Parcial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cambio parcial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePersona 4Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cambio4Error\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/update/21",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"update",
+										"21"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "POST Persona 4Error 2",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "nombre",
-								"value": "pepe",
-								"type": "text"
-							},
-							{
-								"key": "poblacion",
-								"value": "Madrid",
-								"type": "text"
-							},
-							{
-								"key": "edad",
-								"value": "32",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \r\n        \"password\": \"Usuario Nulo\",\r\n        \"name\": \"Prueba\",\r\n        \"surname\": \"Prueba\",\r\n        \"company_email\": \"Prueba@example.com\",\r\n        \"personal_email\": \"Prueba@gmail.com\",\r\n        \"city\": \"15002\",\r\n        \"active\": true,\r\n        \"imagen_url\": \"http9s://example.com/images/Nala.jpg\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "DELETE PERSONA",
+					"item": [
+						{
+							"name": "deletePersona 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"delete",
+										"1"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "POST Persona 4Error 3",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "nombre",
-								"value": "pepe",
-								"type": "text"
-							},
-							{
-								"key": "poblacion",
-								"value": "Madrid",
-								"type": "text"
-							},
-							{
-								"key": "edad",
-								"value": "32",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n        \"usuario\":\"ActiveNulo\",\r\n        \"password\": \"PassPrueba\",\r\n        \"name\": \"Prueba\",\r\n        \"surname\": \"Prueba\",\r\n        \"company_email\": \"Prueba@example.com\",\r\n        \"personal_email\": \"Prueba@gmail.com\",\r\n        \"city\": \"15000\",\r\n        \r\n        \"imagen_url\": \"http9s://example.com/images/Nala.jpg\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
+						{
+							"name": "deletePersona 4Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/delete/1156165",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"delete",
+										"1156165"
+									]
 								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/persona/",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								""
-							]
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				}
 			]
 		},
 		{
-			"name": "GET",
+			"name": "PROFESOR",
 			"item": [
 				{
-					"name": "GET PersonaById 1",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/id/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"id",
-								"1"
-							]
+					"name": "POST PROFESOR",
+					"item": [
+						{
+							"name": "addProfesor 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPersona\": 1,\r\n    \"comments\": \"Profesor de Back\",\r\n    \"branch\": \"Backend\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addProfesor 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPersona\": 2,\r\n    \"comments\": \"Profesor de Front\",\r\n    \"branch\": \"Frontend\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										""
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "GET PersonaById 2",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/id/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"id",
-								"2"
-							]
+					"name": "POST AddStudentToProfesor",
+					"item": [
+						{
+							"name": "addStudentToProfesor 1-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/student?idProfesor=1&idStudent=1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"student"
+									],
+									"query": [
+										{
+											"key": "idProfesor",
+											"value": "1"
+										},
+										{
+											"key": "idStudent",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addStudentToProfesor 1-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/student?idProfesor=1&idStudent=2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"student"
+									],
+									"query": [
+										{
+											"key": "idProfesor",
+											"value": "1"
+										},
+										{
+											"key": "idStudent",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "GET PersonaById 4Error",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/id/256465",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"id",
-								"256465"
-							]
+					"name": "GET PROFESOR",
+					"item": [
+						{
+							"name": "getProfesorById 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProfesorById 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/id/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"id",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProfesorById 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/id/256465",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"id",
+										"256465"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllProfesores",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/profesores",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"profesores"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "GET PersonaByUser 1",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/usuario/Nala",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"usuario",
-								"Nala"
-							]
+					"name": "PUT PROFESOR",
+					"item": [
+						{
+							"name": "updateProfesor 1 Complet",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comments\": \"Cambio completo\",\r\n    \"branch\": \"Cambio completo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateProfesor 1 Parcial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comments\": \"Cambio parcial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateProfesor 4Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comments\": \"IdProfesor no existe\",\r\n    \"branch\": \"Para error\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/update/21",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"update",
+										"21"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "GET PersonaByUser 2",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/usuario/Nala",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"usuario",
-								"Nala"
-							]
+					"name": "DELETE PROFESOR",
+					"item": [
+						{
+							"name": "deleteProfesor 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProfesor 4Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/profesor/delete/1156165",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"delete",
+										"1156165"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET PersonaByUser 4Error",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/usuario/Messi",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"usuario",
-								"Messi"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET AllPersonas",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/persona/personas",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"personas"
-							]
-						}
-					},
-					"response": []
+					]
 				}
 			]
 		},
 		{
-			"name": "PUT",
+			"name": "STUDENT",
 			"item": [
 				{
-					"name": "UPDATE Persona 1 Complet",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id_persona\": 1,\r\n    \"usuario\": \"Cambio\",\r\n    \"name\": \"Cambio\",\r\n    \"surname\": \"Pastor Alemán\",\r\n    \"company_email\": \"Nala@example.com\",\r\n    \"personal_email\": \"Nala@gmail.com\",\r\n    \"city\": \"A Coruña\",\r\n    \"active\": true,\r\n    \"created_date\": \"2023-01-19T11:08:16.864+00:00\",\r\n    \"imagen_url\": \"http9s://example.com/images/Gara.jpg\",\r\n    \"termination_date\": null\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "POST STUDENT",
+					"item": [
+						{
+							"name": "addStudent 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPersona\": 3,\r\n    \"numHourWeek\": 40,\r\n    \"comments\": \"Solo puede trabajar por las mañanas\",\r\n    \"branch\":\"Backend\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/student/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										""
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/update/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"update",
-								"1"
-							]
+						{
+							"name": "addStudent 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPersona\": 4,\r\n    \"numHourWeek\": 40,\r\n    \"comments\": \"Trabaja con otro uso horario\",\r\n    \"branch\":\"FrontEnd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/student/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										""
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "UPDATE Persona 1 Parcial",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n   \r\n    \"name\": \"Cambio parcial\"\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "POST AddStudentToAsignatura",
+					"item": [
+						{
+							"name": "addStudentToAsignatura 1-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/addStudentToAsignaturas?idStudent=1&idsAsignaturas=1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"addStudentToAsignaturas"
+									],
+									"query": [
+										{
+											"key": "idStudent",
+											"value": "1"
+										},
+										{
+											"key": "idsAsignaturas",
+											"value": "1"
+										}
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/update/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"update",
-								"1"
-							]
+						{
+							"name": "addStudentToAsignatura 2-1,2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/addStudentToAsignaturas?idStudent=2&idsAsignaturas=1,2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"addStudentToAsignaturas"
+									],
+									"query": [
+										{
+											"key": "idStudent",
+											"value": "2"
+										},
+										{
+											"key": "idsAsignaturas",
+											"value": "1,2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addStudentToAsignatura 1-1,2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/addStudentToAsignaturas?idStudent=1&idsAsignaturas=1,2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"addStudentToAsignaturas"
+									],
+									"query": [
+										{
+											"key": "idStudent",
+											"value": "1"
+										},
+										{
+											"key": "idsAsignaturas",
+											"value": "1,2"
+										}
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "UPDATE Persona 4Error",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n   \r\n    \"name\": \"CambioParcial\"\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "PUT RemoveAsignaturasFromStudent",
+					"item": [
+						{
+							"name": "removeAsignaturasFromStudent 1-1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/removeAsignaturasFromStudent?idStudent=1&idsAsignaturas=1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"removeAsignaturasFromStudent"
+									],
+									"query": [
+										{
+											"key": "idStudent",
+											"value": "1"
+										},
+										{
+											"key": "idsAsignaturas",
+											"value": "1"
+										}
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "localhost:8080/persona/update/21",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"persona",
-								"update",
-								"21"
-							]
+						{
+							"name": "removeAsignaturasFromStudent 2-1,2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/removeAsignaturasFromStudent?idStudent=2&idsAsignaturas=1,2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"removeAsignaturasFromStudent"
+									],
+									"query": [
+										{
+											"key": "idStudent",
+											"value": "2"
+										},
+										{
+											"key": "idsAsignaturas",
+											"value": "1,2"
+										}
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
+				},
+				{
+					"name": "GET STUDENT",
+					"item": [
+						{
+							"name": "getStudentById 1 Default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getStudentById 1 Simple",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/id/1?outputType=simple",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"id",
+										"1"
+									],
+									"query": [
+										{
+											"key": "outputType",
+											"value": "simple"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getStudentById 2 Full",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/id/1?outputType=full",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"id",
+										"1"
+									],
+									"query": [
+										{
+											"key": "outputType",
+											"value": "full"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getStudentById 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/id/1564654654?outputType=full",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"id",
+										"1564654654"
+									],
+									"query": [
+										{
+											"key": "outputType",
+											"value": "full"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllStudents",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/students",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"students"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT STUDENT",
+					"item": [
+						{
+							"name": "updateStudent1 Complet",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comments\": \"Cambio Completo\",\r\n    \"branch\":\"Cambio Completo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateStudent 1 Parcial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"branch\":\"Cambio Parcial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/profesor/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"profesor",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateStudent 4Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"comments\": \"IdStudent no existe\",\r\n    \"branch\": \"Para error\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/student/update/21",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"update",
+										"21"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE STUDENT",
+					"item": [
+						{
+							"name": "deleteStudent 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteStudent 4Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/student/delete/1156165",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"student",
+										"delete",
+										"1156165"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
 		{
-			"name": "DELETE",
+			"name": "ASIGNATURA",
 			"item": [
 				{
-					"name": "DELETE Persona 1",
+					"name": "POST ASIGNATURA",
+					"item": [
+						{
+							"name": "addAsignatura 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreAsignatura\":\"Spring Boot\",\r\n    \"comments\": \"Importante\",\r\n    \"branch\":\"Backend\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/asignatura/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addAsignatura 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreAsignatura\":\"React\",\r\n    \"comments\": \"Importante\",\r\n    \"branch\":\"FrontEnd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/asignatura/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET ASIGNATURA",
+					"item": [
+						{
+							"name": "getAsignaturaById 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/asignatura/id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAsignaturaById 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/asignatura/id/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"id",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAsignaturaById 4Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/asignatura/id/256465",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"id",
+										"256465"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllAsignaturas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/asignatura/asignaturas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"asignaturas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT ASIGNATURA",
+					"item": [
+						{
+							"name": "updateAsignatura 1 Complet",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreAsignatura\": \"Cambio Completo\",\r\n    \"comments\": \"Cambio Completo\",\r\n    \"branch\":\"Cambio Completo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/asignatura/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAsignatura1 Parcial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"branch\":\"Cambio Parcial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/asignatura/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAsignatura 4Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idPersona\": 1,\r\n    \"comments\": \"IdStudent no existe\",\r\n    \"branch\": \"Para error\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/asignatura/update/21",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"update",
+										"21"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE ASIGNATURA",
+					"item": [
+						{
+							"name": "deleteAsignatura 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/asignatura/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteAsignatura 4Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/asignatura/delete/1156165",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"asignatura",
+										"delete",
+										"1156165"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Feign/RestTemplate",
+			"item": [
+				{
+					"name": "Feign",
 					"request": {
-						"method": "DELETE",
+						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/persona/delete/1",
+							"raw": "localhost:8081/persona/profesor/feign/1",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"persona",
-								"delete",
+								"profesor",
+								"feign",
 								"1"
 							]
 						}
@@ -491,20 +1571,63 @@
 					"response": []
 				},
 				{
-					"name": "DELETE Persona 4Error",
+					"name": "Feign 4Error",
 					"request": {
-						"method": "DELETE",
+						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/persona/delete/1156165",
+							"raw": "localhost:8081/persona/profesor/feign/50",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"persona",
-								"delete",
-								"1156165"
+								"profesor",
+								"feign",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RestTemplate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/persona/profesor/restTemplate/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"persona",
+								"profesor",
+								"restTemplate",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RestTemplate 4Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/persona/profesor/restTemplate/50",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"persona",
+								"profesor",
+								"restTemplate",
+								"50"
 							]
 						}
 					},
