@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "29b1980a-129c-4810-ac04-09046dc4b9ff",
+		"name": "block10-dockerize-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "PERSONA",
+			"item": [
+				{
+					"name": "POST PERSONA",
+					"item": [
+						{
+							"name": "addPersona 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ficticia1\",\r\n    \"age\": 50,\r\n    \"city\": \"Ciudad Ficticia1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "addPersona 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ficticia2\",\r\n    \"age\": 45,\r\n    \"city\": \"Ciudad Ficticia2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET PERSONA",
+					"item": [
+						{
+							"name": "getPersonaById 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPersonaById 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/id/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"id",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT PERSONA",
+					"item": [
+						{
+							"name": "updatePersona 1 Completo",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Ficticia11\",\r\n    \"age\": 55,\r\n    \"city\": \"Ciudad Ficticia11\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePersona 1 Parcial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cambio parcial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/persona/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE PERSONA",
+					"item": [
+						{
+							"name": "deletePersona 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePersona 4Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/persona/delete/1156165",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"persona",
+										"delete",
+										"1156165"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
