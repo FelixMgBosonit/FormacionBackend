@@ -1,0 +1,6 @@
+Debido a las últimas actualizaciones en Spring el ejercicio no podía ser realizado tal y como
+pedía el plan de formación.
+
+Estos dos ficheros .xml cumplían con los objetivos del mismo.
+
+Fueron compartidos por compañeros.
