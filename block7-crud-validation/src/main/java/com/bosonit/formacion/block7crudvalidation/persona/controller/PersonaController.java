@@ -19,36 +19,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/persona")
 public class PersonaController {
-
     @Autowired
     PersonaService personaService;
 
     @Autowired
     FeignProfesor feignProfesor;
-
-    @GetMapping("/profesor/feign/{id}")
-    public ResponseEntity<ProfesorOutputDto> getProfesorFeign(@PathVariable Integer id) {
-        ResponseEntity<ProfesorOutputDto> responseEntity;
-        try {
-            responseEntity = new ResponseEntity(feignProfesor.getProfesorById(id), HttpStatus.OK);
-        } catch (FeignException.NotFound e) {
-            throw new EntityNotFoundException("Profesor (Feign) no encontrado");
-        }
-        return ResponseEntity.ok().body(feignProfesor.getProfesorById(id));
-    }
-
-
-    @GetMapping("/profesor/restTemplate/{id}")
-    public ResponseEntity<ProfesorOutputDto> getProfesorRestTemplate(@PathVariable Integer id) {
-        ResponseEntity<ProfesorOutputDto> responseEntity;
-        try {
-            responseEntity = new RestTemplate().getForEntity("http://localhost:8080/profesor/id/{id}", ProfesorOutputDto.class, id);
-        } catch (HttpClientErrorException.NotFound e) {
-            throw new EntityNotFoundException("Profesor (RestTemplate) no encontrado");
-        }
-
-        return responseEntity;
-    }
 
     @PostMapping("/")
     public ResponseEntity<PersonaOutputDto> addPersona(@RequestBody PersonaInputDto personaInputDto) {//throws Exception eliminado por los ifs de personaServiceImpl
@@ -83,8 +58,33 @@ public class PersonaController {
     public ResponseEntity<String> deletePersonaById(@PathVariable("id") Integer id) {
         return ResponseEntity.ok().body((personaService.deletePersonaById(id)));
     }
+
+
+
+    //----------------------------------------FEIGN-------------------------------------------------
+    @GetMapping("/profesor/feign/{id}")
+    public ResponseEntity<ProfesorOutputDto> getProfesorFeign(@PathVariable Integer id) {
+        ResponseEntity<ProfesorOutputDto> responseEntity;
+        try {
+            responseEntity = new ResponseEntity(feignProfesor.getProfesorById(id), HttpStatus.OK);
+        } catch (FeignException.NotFound e) {
+            throw new EntityNotFoundException("Profesor (Feign) no encontrado");
+        }
+        return ResponseEntity.ok().body(feignProfesor.getProfesorById(id));
+    }
+
+
+    @GetMapping("/profesor/restTemplate/{id}")
+    public ResponseEntity<ProfesorOutputDto> getProfesorRestTemplate(@PathVariable Integer id) {
+        ResponseEntity<ProfesorOutputDto> responseEntity;
+        try {
+            responseEntity = new RestTemplate().getForEntity("http://localhost:8080/profesor/id/{id}", ProfesorOutputDto.class, id);
+        } catch (HttpClientErrorException.NotFound e) {
+            throw new EntityNotFoundException("Profesor (RestTemplate) no encontrado");
+        }
+
+        return responseEntity;
+    }
+    //---------------------------------------------------------------------------------------------
+
 }
-
-
-
-
