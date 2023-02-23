@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "832ffc58-a765-4f52-80e9-841be14ddc90",
+		"name": "block11-upload-download-files",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "POST Fichero 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/felix.munoz/Downloads/HomerSimpsons.png"
+								},
+								{
+									"key": "type",
+									"value": ".png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/fileB11/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fileB11",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "showAllFiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fileB11/showAllFiles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fileB11",
+								"showAllFiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fileB11/showContentFileById/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fileB11",
+								"showContentFileById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fileB11/showContentFileByName/BartSimpsons.png",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fileB11",
+								"showContentFileByName",
+								"BartSimpsons.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fileDownloadById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fileB11/downloadFileById/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fileB11",
+								"downloadFileById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fileDownloadByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fileB11/downloadFileByName/BartSimpsons.png",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fileB11",
+								"downloadFileByName",
+								"BartSimpsons.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

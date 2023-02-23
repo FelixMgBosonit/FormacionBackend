@@ -1,0 +1,2 @@
+En esta carpeta se adjuntas las dos imágenes .png utilizadas ya que se corresponden
+con las peticiones adjuntadas en el directorio Postman.
