@@ -10,7 +10,7 @@
 			"name": "POST",
 			"item": [
 				{
-					"name": "POST Fichero 1",
+					"name": "upload JPG 1",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -20,7 +20,75 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/felix.munoz/Downloads/HomerSimpsons.png"
+									"src": "/C:/Users/felix.munoz/IdeaProjects/FormacionBackend_Pruebas/block11-upload-download-files/recursos/FotoSimpsons1.jpg"
+								},
+								{
+									"key": "type",
+									"value": ".jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/file/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload JPG 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/felix.munoz/IdeaProjects/FormacionBackend_Pruebas/block11-upload-download-files/recursos/FotoSimpsons2.jpg"
+								},
+								{
+									"key": "type",
+									"value": ".jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/file/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload PNG 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/felix.munoz/IdeaProjects/FormacionBackend_Pruebas/block11-upload-download-files/recursos/FotoSimpsons3.png"
 								},
 								{
 									"key": "type",
@@ -30,13 +98,149 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:8080/fileB11/upload",
+							"raw": "localhost:8080/file/upload",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"fileB11",
+								"file",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload TXT 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/felix.munoz/IdeaProjects/FormacionBackend_Pruebas/block11-upload-download-files/recursos/Recursos.txt"
+								},
+								{
+									"key": "type",
+									"value": ".txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/file/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload MP3 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/felix.munoz/IdeaProjects/FormacionBackend_Pruebas/block11-upload-download-files/recursos/AudioPrueba.mp3"
+								},
+								{
+									"key": "type",
+									"value": ".mp3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/file/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload MP4 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/felix.munoz/IdeaProjects/FormacionBackend_Pruebas/block11-upload-download-files/recursos/VideoPrueba.mp4"
+								},
+								{
+									"key": "type",
+									"value": ".mp4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/file/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload 4 Error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "type",
+									"value": ".jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/file/upload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
 								"upload"
 							]
 						}
@@ -54,13 +258,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/fileB11/showAllFiles",
+							"raw": "localhost:8080/file/showAllFiles",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"fileB11",
+								"file",
 								"showAllFiles"
 							]
 						}
@@ -68,18 +272,18 @@
 					"response": []
 				},
 				{
-					"name": "showContentFileById",
+					"name": "showContentFileById JPG 1",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/fileB11/showContentFileById/1",
+							"raw": "localhost:8080/file/showContentFileById/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"fileB11",
+								"file",
 								"showContentFileById",
 								"1"
 							]
@@ -88,20 +292,260 @@
 					"response": []
 				},
 				{
-					"name": "showContentFileByName",
+					"name": "showContentFileById JPG 2",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/fileB11/showContentFileByName/BartSimpsons.png",
+							"raw": "localhost:8080/file/showContentFileById/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"fileB11",
+								"file",
+								"showContentFileById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileById PNG 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileById/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileById TXT 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileById/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileById",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileById MP3 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileById/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileById",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileById MP4 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileById/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileById",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileById 4 Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileById/950",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileById",
+								"950"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName JPG 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/FotoSimpsons1.jpg",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
 								"showContentFileByName",
-								"BartSimpsons.png"
+								"FotoSimpsons1.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName JPG 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/FotoSimpsons2.jpg",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileByName",
+								"FotoSimpsons2.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName PNG 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/FotoSimpsons3.png",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileByName",
+								"FotoSimpsons3.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName TXT 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/Recursos.txt",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileByName",
+								"Recursos.txt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName MP3 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/AudioPrueba.mp3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileByName",
+								"AudioPrueba.mp3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName MP4 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/VideoPrueba.mp4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileByName",
+								"VideoPrueba.mp4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showContentFileByName 4 Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/showContentFileByName/4Error.mp4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"showContentFileByName",
+								"4Error.mp4"
 							]
 						}
 					},
@@ -113,15 +557,35 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/fileB11/downloadFileById/1",
+							"raw": "localhost:8080/file/downloadFileById/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"fileB11",
+								"file",
 								"downloadFileById",
 								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fileDownloadById 4 Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/downloadFileById/950",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"downloadFileById",
+								"950"
 							]
 						}
 					},
@@ -133,15 +597,35 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/fileB11/downloadFileByName/BartSimpsons.png",
+							"raw": "localhost:8080/file/downloadFileByName/FotoSimpsons2.jpg",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"fileB11",
+								"file",
 								"downloadFileByName",
-								"BartSimpsons.png"
+								"FotoSimpsons2.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fileDownloadByName 4 Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/file/downloadFileByName/4Error.mp4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"downloadFileByName",
+								"4Error.mp4"
 							]
 						}
 					},

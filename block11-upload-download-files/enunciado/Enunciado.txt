@@ -2,8 +2,8 @@ Subir y bajar ficheros
 Nombre proyecto Maven: block11-upload-download-files
 
 1)
-Permitir subir un fileB11 incluyendo como metadato la categoría. Guardar el fileB11 y en una tabla el metadato, nombre de fileB11, fecha de subida, etc. Devolver Entidad ‘Fichero’ con los datos, incluyendo un ID único.
-Descargar fileB11, buscándolo por diferentes métodos (id y nombre de fileB11).
+Permitir subir un file incluyendo como metadato la categoría. Guardar el file y en una tabla el metadato, nombre de file, fecha de subida, etc. Devolver Entidad ‘Fichero’ con los datos, incluyendo un ID único.
+Descargar file, buscándolo por diferentes métodos (id y nombre de file).
 
 2) Crear programa con estos endpoints.
 Petición POST. /upload/{tipo} (@RequestParam("file") MultipartFile file,

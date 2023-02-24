@@ -1,2 +1,5 @@
-En esta carpeta se adjuntas las dos imágenes .png utilizadas ya que se corresponden
-con las peticiones adjuntadas en el directorio Postman.
+En esta carpeta se adjuntas los distintos archivo .png, .jpg, .mp3 y .mp4 utilizadas ya
+que se corresponden con las peticiones adjuntadas en el directorio Postman.
+
+En el último commit se modificó esta carpeta con contenido libre de derechos de autor,
+sin copyright.
