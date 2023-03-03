@@ -1,0 +1,9 @@
+12. Mensajería
+Kafka
+Nombre proyecto Maven: block12-kafka
+Usando Kafka, montar dos aplicaciones: una que envíe mensajes y la segunda le responda con otros mensajes.
+
+
+En esta carpeta se encuentran tres proyectos diferentes con distintas versiones
+del ejercicio, dentro de cada carpeta se adjunta un Readme.txt donde se especifican
+más detalles decada versión.
