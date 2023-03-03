@@ -1,0 +1,931 @@
+{
+	"info": {
+		"_postman_id": "12cea60c-4334-4b67-b3c1-dfb33cf2dbef",
+		"name": "examen_JPA_casacada",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25196274"
+	},
+	"item": [
+		{
+			"name": "CLIENTE",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreCliente\": \"Ficticia3\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreCliente\": \"Ficticia4\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/getById/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"getById",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get 4 Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/getById/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"getById",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/getAll",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"getAll"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Update 1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreCliente\": \"Ficticia50\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update 4 Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreCliente\": \"Ficticia50\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cliente/update/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"update",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete 4 Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cliente/delete/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"delete",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CABECERAFRA",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCliente\": 1,\r\n    \"importeFra\":5000\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCliente\": 2,\r\n    \"importeFra\":90000\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/getById/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"getById",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get 4 Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/getById/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"getById",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/getAll",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"getAll"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Update Completa",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCliente\": 2,\r\n    \"importeFra\":500050\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Only importeFra",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"importeFra\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Only idCliente",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCliente\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update 4 Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreCliente\": \"Ficticia50\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/update/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"update",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cabecerafra/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabecerafra",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete 4 Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cabecerafra/delete/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabecerafra",
+										"delete",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LINEAFRA",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Post 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productoNombre\":\"Producto 1\",\r\n    \"cantidad\": 1,\r\n    \"precio\": 1500.50\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/lineaFra/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productoNombre\":\"Producto 2\",\r\n    \"cantidad\": 5,\r\n    \"precio\": 2500\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/lineaFra/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post 4 Error",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCabeceraFra\": 1,\r\n\r\n    \"cantidad\": 1,\r\n    \"precio\": 1500.50\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/lineaFra/",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get 1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/lineaFra/getById/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"getById",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get 4 Error",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/lineaFra/getById/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"getById",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/cabeceraFra/getAll",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cabeceraFra",
+										"getAll"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Update Completa",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idCabeceraFra\": 2,\r\n    \"productoNombre\":\"Producto 50\",\r\n    \"cantidad\": 150,\r\n    \"precio\": 150000.50\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/lineaFra/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Only productoNombre",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productoNombre\":\"Producto 508080\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/lineaFra/update/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update 4 Error",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreCliente\": \"Ficticia50\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/lineaFra/update/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"update",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/lineaFra/delete/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete 4 Error",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/lineaFra/delete/5050",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"lineaFra",
+										"delete",
+										"5050"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ADD LineaFraToCabeceraFra",
+			"item": [
+				{
+					"name": "1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cabeceraFra/lineaFra?idCabeceraFra=1&idsLineaFra=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cabeceraFra",
+								"lineaFra"
+							],
+							"query": [
+								{
+									"key": "idCabeceraFra",
+									"value": "1"
+								},
+								{
+									"key": "idsLineaFra",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cabeceraFra/lineaFra?idCabeceraFra=1&idsLineaFra=1,2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cabeceraFra",
+								"lineaFra"
+							],
+							"query": [
+								{
+									"key": "idCabeceraFra",
+									"value": "1"
+								},
+								{
+									"key": "idsLineaFra",
+									"value": "1,2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 Error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cabeceraFra/lineaFra?idCabeceraFra=5050&idsLineaFra=1,2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cabeceraFra",
+								"lineaFra"
+							],
+							"query": [
+								{
+									"key": "idCabeceraFra",
+									"value": "5050"
+								},
+								{
+									"key": "idsLineaFra",
+									"value": "1,2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
