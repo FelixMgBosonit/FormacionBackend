@@ -32,7 +32,7 @@ public class CabeceraFra {
     @JoinColumn(name="idCliente")
     private Cliente cliente;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)//(mappedBy ="cabeceraFra" )
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "cabeceraFra", cascade = CascadeType.ALL,orphanRemoval = true)
     private List<LineaFra> lineaFraList=new ArrayList<>();
 
     //----------------------------------------------------------

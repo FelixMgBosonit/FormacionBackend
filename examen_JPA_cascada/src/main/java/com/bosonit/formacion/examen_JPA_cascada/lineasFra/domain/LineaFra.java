@@ -28,7 +28,7 @@ public class LineaFra {
     private Double precio;
 
     //------------------------Relaciones------------------------
-    @ManyToOne(fetch = FetchType.EAGER)//( cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name="idCabeceraFra")
     private CabeceraFra cabeceraFra;
 
