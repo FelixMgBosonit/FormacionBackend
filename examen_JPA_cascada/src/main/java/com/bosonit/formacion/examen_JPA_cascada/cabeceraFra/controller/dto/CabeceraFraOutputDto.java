@@ -2,9 +2,7 @@ package com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller.dto;
 
 import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.domain.CabeceraFra;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.controller.dto.ClienteOutputDto;
-import com.bosonit.formacion.examen_JPA_cascada.cliente.domain.Cliente;
 import com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller.dto.LineaFraOuputDto;
-import com.bosonit.formacion.examen_JPA_cascada.lineasFra.domain.LineaFra;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,5 @@
 package com.bosonit.formacion.examen_JPA_cascada.lineasFra.application;
 
-import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.domain.CabeceraFra;
 import com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller.dto.LineaFraInputDto;
 import com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller.dto.LineaFraOuputDto;
 
@@ -11,5 +10,5 @@ public interface LineaFraService {
     LineaFraOuputDto getLineaFraById (Integer id);
     List<LineaFraOuputDto> getAllLineaFra ();
     LineaFraOuputDto updateLineaFra (Integer id,LineaFraInputDto lineaFraInputDto);
-    String deleteLineasFraById (Integer id);
+    String deleteLineaFraById (Integer id);
 }

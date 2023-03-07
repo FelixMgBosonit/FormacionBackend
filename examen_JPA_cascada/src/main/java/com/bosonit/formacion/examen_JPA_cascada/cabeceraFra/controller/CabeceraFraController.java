@@ -3,6 +3,8 @@ package com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller;
 import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.application.CabeceraFraService;
 import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller.dto.CabeceraFraInputDto;
 import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller.dto.CabeceraFraOutputDto;
+import com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller.dto.LineaFraInputDto;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,7 +34,6 @@ public class CabeceraFraController {
 
 
 
-
     @GetMapping("/getAll")
     public ResponseEntity<List<CabeceraFraOutputDto>> getAllCabeceraFra() {
         return ResponseEntity.ok().body(cabeceraFraService.getAllCabeceraFra());
@@ -49,12 +50,9 @@ public class CabeceraFraController {
         return ResponseEntity.ok().body(cabeceraFraService.deleteCabeceraFraById(id));
     }
 
-
-    @PostMapping("/lineaFra")
-    public ResponseEntity<CabeceraFraOutputDto> addLineaFraToCabeceraFra(@RequestParam("idCabeceraFra") Integer idCabeceraFra,
-                                                         @RequestParam("idsLineaFra") List<Integer> idsLineaFra) {
-        return ResponseEntity.ok().body(cabeceraFraService.addLineaFraToCabeceraFra(idCabeceraFra, idsLineaFra));
+    @PostMapping("/lineaFra/")
+    public ResponseEntity<CabeceraFraOutputDto> addLineaFraToCabeceraFras(@Valid @RequestBody LineaFraInputDto lineaFraInputDto) {
+        return ResponseEntity.ok().body(cabeceraFraService.addLineaFraToCabeceraFra(lineaFraInputDto));
     }
-
 
 }

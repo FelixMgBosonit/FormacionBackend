@@ -14,5 +14,6 @@ public class LineaFraInputDto {
     private String productoNombre;
     private Double cantidad;
     private Double precio;
+    private Integer idCabeceraFra;
 
 }

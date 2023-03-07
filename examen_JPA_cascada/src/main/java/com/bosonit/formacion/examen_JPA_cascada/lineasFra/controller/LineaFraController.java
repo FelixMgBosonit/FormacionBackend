@@ -4,6 +4,7 @@ package com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller;
 import com.bosonit.formacion.examen_JPA_cascada.lineasFra.application.LineaFraService;
 import com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller.dto.LineaFraInputDto;
 import com.bosonit.formacion.examen_JPA_cascada.lineasFra.controller.dto.LineaFraOuputDto;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class LineaFraController {
 
 
     @PostMapping("/")
-    public ResponseEntity<LineaFraOuputDto> addLineaFra (@RequestBody LineaFraInputDto lineaFraInputDto) {
+    public ResponseEntity<LineaFraOuputDto> addLineaFra (@Valid @RequestBody LineaFraInputDto lineaFraInputDto) {
         return new ResponseEntity<>(lineaFraService.addLineaFra(lineaFraInputDto), HttpStatus.CREATED);
     }
 
@@ -46,7 +47,7 @@ public class LineaFraController {
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteLineaFra(@PathVariable("id") Integer id) {
-        return ResponseEntity.ok().body(lineaFraService.deleteLineasFraById(id));
+        return ResponseEntity.ok().body(lineaFraService.deleteLineaFraById(id));
     }
 
 

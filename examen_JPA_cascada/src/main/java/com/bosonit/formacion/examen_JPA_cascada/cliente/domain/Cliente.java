@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.repository.cdi.Eager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,13 +23,13 @@ public class Cliente {
     @Column(name = "id_cliente", unique = true)
     private Integer idCliente;
 
-    @Column(name="nombre", nullable = false, length = 100)
+    @Column(name = "nombre", nullable = false, length = 100)
     private String nombreCliente;
 
 
     //------------------------Relaciones------------------------
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "cliente", cascade = CascadeType.ALL)
-    private List<CabeceraFra> cabeceraFraList=new ArrayList<>();
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "cliente", orphanRemoval = true)
+    private List<CabeceraFra> cabeceraFraList = new ArrayList<>();
 
     //----------------------------------------------------------
 

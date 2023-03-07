@@ -1,9 +1,6 @@
 package com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller.dto;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +13,5 @@ import lombok.Setter;
 public class CabeceraFraInputDto {
 
     private Integer idCliente;
-    private Double importeFra;
-
 
 }

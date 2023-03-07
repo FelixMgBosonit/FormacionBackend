@@ -1,10 +1,9 @@
 package com.bosonit.formacion.examen_JPA_cascada.cliente.controller;
 
-import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller.dto.CabeceraFraInputDto;
-import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.controller.dto.CabeceraFraOutputDto;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.application.ClienteService;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.controller.dto.ClienteInputDto;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.controller.dto.ClienteOutputDto;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +21,7 @@ public class ClienteController {
 
 
     @PostMapping("/")
-    public ResponseEntity<ClienteOutputDto> addCliente (@RequestBody ClienteInputDto clienteInputDto) {
+    public ResponseEntity<ClienteOutputDto> addCliente (@Valid @RequestBody ClienteInputDto clienteInputDto) {
         return new ResponseEntity<>(clienteService.addCliente(clienteInputDto), HttpStatus.CREATED);
     }
 

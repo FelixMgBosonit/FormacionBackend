@@ -1,11 +1,11 @@
 package com.bosonit.formacion.examen_JPA_cascada.cliente.application;
 
-import com.bosonit.formacion.examen_JPA_cascada.cabeceraFra.domain.CabeceraFra;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.controller.dto.ClienteInputDto;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.controller.dto.ClienteOutputDto;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.domain.Cliente;
 import com.bosonit.formacion.examen_JPA_cascada.cliente.repository.ClienteRepository;
 import com.bosonit.formacion.examen_JPA_cascada.exception.EntityNotFoundException;
+import com.bosonit.formacion.examen_JPA_cascada.exception.UnprocessableEntityException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +20,13 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public ClienteOutputDto addCliente(ClienteInputDto clienteInputDto) {
+
+        //--------------------Control clienteInputDto----------------------------------------------
+        if (clienteInputDto.getNombreCliente() == null) {
+            throw new UnprocessableEntityException(" nombreCliente no puede ser nulo.");
+        }
+        //-----------------------------------------------------------------------------------------
+
         Cliente cliente = new Cliente();
         cliente.setNombreCliente(clienteInputDto.getNombreCliente());
 
@@ -53,6 +60,13 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public ClienteOutputDto updateCliente(Integer id, ClienteInputDto clienteInputDto) {
+
+        //--------------------Control clienteInputDto----------------------------------------------
+        if (clienteInputDto.getNombreCliente() == null) {
+            throw new UnprocessableEntityException(" nombreCliente no puede ser nulo.");
+        }
+        //-----------------------------------------------------------------------------------------
+
         Cliente cliente = clienteRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Cliente no encontrado."));
         cliente.setNombreCliente(clienteInputDto.getNombreCliente());
         clienteRepository.save(cliente);

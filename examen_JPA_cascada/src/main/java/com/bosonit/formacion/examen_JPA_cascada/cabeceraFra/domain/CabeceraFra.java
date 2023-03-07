@@ -28,11 +28,11 @@ public class CabeceraFra {
     private Double importeFra;
 
     //------------------------Relaciones------------------------
-    @ManyToOne// (fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name="idCliente")
     private Cliente cliente;
 
-    @OneToMany(fetch = FetchType.EAGER,mappedBy = "cabeceraFra", cascade = CascadeType.ALL,orphanRemoval = true)
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "cabeceraFra",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<LineaFra> lineaFraList=new ArrayList<>();
 
     //----------------------------------------------------------
