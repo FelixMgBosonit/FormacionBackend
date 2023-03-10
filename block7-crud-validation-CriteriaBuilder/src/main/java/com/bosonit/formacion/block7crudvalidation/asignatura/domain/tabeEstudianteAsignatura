@@ -1,0 +1,9 @@
+table estudiante_asignatura
+{
+  id_asignatura String [pk, increment]
+  id_student string [ref: > student.id_student] -- Un estudiante puede tener N asignaturas
+  asignatura string  -- Ejemplo: HTML, Angular, SpringBoot...
+ coments string
+ initial_date date [not null], -- Fecha en que estudiante empezó a estudiar la asignatura
+ finish_date date  -- Fecha en que estudiante termina de estudiar la asignatura
+}

@@ -1,0 +1,7 @@
+table profesor
+{
+  id_profesor string [pk, increment]
+  id_persona string [ref:- persona.id_persona] -- Relación OneToOne con la tabla persona.
+  coments string
+  branch string [not null] -- Materia principal que imparte. Por ejemplo: Front
+}

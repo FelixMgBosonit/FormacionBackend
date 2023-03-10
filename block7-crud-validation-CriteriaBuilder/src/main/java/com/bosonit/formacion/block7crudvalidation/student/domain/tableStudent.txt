@@ -1,0 +1,9 @@
+table student
+{
+  id_student string [pk, increment]
+  id_persona string [ref:-  persona.id_persona] -- Relación OneToOne con la tabla persona.
+  num_hours_week int   [not null] -- Número de horas semanales del estudiante en formación
+  coments string
+  id_profesor string [ref: > profesor.id_profesor] -- Un estudiante solo puede tener un profesor.
+  branch string [not null] -- Rama principal delestudiante (Front, Back, FullStack)
+}
